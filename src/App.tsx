@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import { Users } from './pages'
 
 function App() {
-  useEffect(() => {
-    axios.get('http://localhost:3000/user').then(console.log)
-  }, [])
-
-  return <div className="App">Hello World</div>
+  return <Users />
 }
 
 export default App
